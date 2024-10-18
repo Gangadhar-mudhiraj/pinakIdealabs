@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment with Icons and Rotation</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @keyframes rotate360 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .rotate-card:hover {
+            animation: rotate360 1s ease-in-out;
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-100 p-8">
+
+
+    <div class="relative w-full py-9" style="background-color:rgb(49, 28, 109);" id="assignment">
+        <div class="absolute inset-0 w-full h-full bg-gray-200"
+            style="clip-path: polygon(100% 100%, 100% 25%, 8% 100%);"></div>
+
+
+        <h1 class="relative z-10 text-white text-5xl ms-12 mb-12">Our Services</h1>
+
+
+        <div class="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 px-4">
+
+
+            <div class="relative group">
+
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-100 w-16 h-16 rounded-full z-20 flex items-center justify-center"
+                    style="border:2px solid rgb(49,28,109)">
+                    <img class="p-2 m-2" src="./call.png" alt="">
+                </div>
+
+                <div
+                    class="rotate-card bg-white p-8 rounded-lg shadow-lg text-center h-[350px] flex flex-col justify-center">
+                    <h3 class="text-xl font-bold mb-4">Emergency Plumbing Services</h3>
+                    <p class="text-gray-600 mb-4">Our plumbers are ready to go 24/7 for emergencies - including nights,
+                        weekends, and holidays.</p>
+                    <a href="#" class="font-semibold hover:underline" style="color: rgb(49, 28, 109);">EXPLORE THIS
+                        SERVICE ></a>
+                </div>
+            </div>
+
+
+            <div class="relative group">
+
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-100 w-16 h-16 rounded-full z-20 flex items-center justify-center"
+                    style="border:2px solid rgb(49,28,109)">
+                    <img class="p-2 m-2" src="./tap.png" alt="">
+                </div>
+
+                <div
+                    class="rotate-card bg-white p-8 rounded-lg shadow-lg text-center h-[350px] flex flex-col justify-center">
+                    <h3 class="text-xl font-bold mb-4">Plumbing and drains</h3>
+                    <p class="text-gray-600 mb-4">As the largest plumbing and drain service company. we make thousands
+                        of repairs every day.</p>
+                    <a href="#" class="font-semibold hover:underline" style="color: rgb(49, 28, 109);">EXPLORE THIS
+                        SERVICE ></a>
+                </div>
+            </div>
+
+
+            <div class="relative group">
+
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-100 w-16 h-16 rounded-full z-20 flex items-center justify-center"
+                    style="border:2px solid rgb(49,28,109)">
+                    <img class="p-2 m-2" src="./drop.png" alt="">
+                </div>
+
+                <div
+                    class="rotate-card bg-white p-8 rounded-lg shadow-lg text-center h-[350px] flex flex-col justify-center">
+                    <h3 class="text-xl font-bold mb-4">Water Damage</h3>
+                    <p class="text-gray-600 mb-4">Our teams are equipped with state-of-the-art water extraction and
+                        cleanup equipment.</p>
+                    <a href="#" class="font-semibold hover:underline" style="color: rgb(49, 28, 109);">EXPLORE THIS
+                        SERVICE ></a>
+                </div>
+            </div>
+
+
+            <div class="relative group">
+
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-100 w-16 h-16 rounded-full z-20 flex items-center justify-center"
+                    style="border:2px solid rgb(49,28,109)">
+                    <img class="p-2 m-2" src="./water-heater.png" alt="">
+                </div>
+
+                <div
+                    class="rotate-card bg-white p-8 rounded-lg shadow-lg text-center h-[350px] flex flex-col justify-center">
+                    <h3 class="text-xl font-bold mb-4">Water Heaters</h3>
+                    <p class="text-gray-600 mb-4">Trust us for repair and replacement of gas, electric, and tankless
+                        water heaters.</p>
+                    <a href="#" class="font-semibold hover:underline" style="color: rgb(49, 28, 109);">EXPLORE THIS
+                        SERVICE ></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
